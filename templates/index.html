@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Integrity Logs</title>
+</head>
+<body>
+    <h1>File Integrity Monitoring Logs</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Filename</th>
+            <th>Hash</th>
+            <th>Action</th>
+            <th>Timestamp</th>
+        </tr>
+        {% for log in logs %}
+        <tr>
+            <td>{{ log[0] }}</td>
+            <td>{{ log[1] }}</td>
+            <td>{{ log[2] if log[2] else 'N/A' }}</td>
+            <td>{{ log[3] }}</td>
+            <td>{{ log[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
