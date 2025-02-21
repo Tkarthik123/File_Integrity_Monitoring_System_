@@ -54,12 +54,19 @@ python -m unittest test_monitor.py
 
 📂 File-Integrity-Monitoring-System
 │── monitor.py           # Main script for monitoring files
+
 │── log_viewer.py        # Displays logs from the SQLite database
+
 │── test_monitor.py      # Unit tests for integrity checks
+
 │── requirements.txt     # Dependencies list
+
 │── README.md            # Documentation
+
 │── file_logs.db         # SQLite database storing file events
+
 🔹 monitored_folder/    # Folder being monitored for changes
+
 
 📩 Email Notifications (Optional)
 
